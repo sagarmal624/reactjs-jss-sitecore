@@ -1,0 +1,17 @@
+{
+  "id": "fwd",
+  "fields": {
+    "pageTitle": "Welcome to Fwd"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "Fwd",
+        "fields": {
+          "heading": "Put Heading of component Here...",
+          "content":"<p>content goes here...</p>"
+        }
+      }
+    ]
+  }
+}

@@ -23,8 +23,9 @@ if (!/^[A-Z][A-Za-z0-9-]+$/.test(componentName)) {
   throw 'Component name should start with an uppercase letter and contain only letters and numbers.';
 }
 
-const componentManifestDefinitionsPath = 'sitecore/definitions/components';
+const componentManifestDefinitionsPath = 'src/components';
 const componentRootPath = 'src/components';
+const routeRootPath = 'data/routes';
 
 let manifestOutputPath = null;
 
@@ -37,6 +38,7 @@ if (fs.existsSync(componentManifestDefinitionsPath)) {
 }
 
 const componentOutputPath = scaffoldComponent();
+const routeOutputPath = scaffoldRoute();
 
 console.log();
 console.log(chalk.green(`Component ${componentName} has been scaffolded.`));
@@ -63,7 +65,7 @@ if (manifestOutputPath) {
       'jss deploy:watch'
     )} or ${chalk.green('jss deploy files')})`
   );
-  console.log(`* Add the component to a route using Sitecore Experience Editor, and test it.`);
+  console.log(`* Scaffold already added route(${routeOutputPath}) for this the component.try with /${componentName}`);
 }
 
 /*
@@ -100,7 +102,42 @@ export default ${exportVarName};
 
   return outputFilePath;
 }
+function scaffoldRoute() {
+  const exportVarName = componentName.replace(/[^\w]+/g, '');
+var routeName=exportVarName.toLowerCase();
+  const routeTemplate = `{
+  "id": "${routeName}",
+  "fields": {
+    "pageTitle": "Welcome to ${componentName}"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "${exportVarName}",
+        "fields": {
+          "heading": "Put Heading of component Here...",
+          "content":"<p>content goes here...</p>"
+        }
+      }
+    ]
+  }
+}
+`;
 
+  const routeDirectoryPath = path.join(routeRootPath, componentName.toLowerCase());
+
+  if (fs.existsSync(routeDirectoryPath)) {
+    throw `Component Route path ${routeDirectoryPath} already existed. Not creating route for the component.`;
+  }
+
+  fs.mkdirSync(routeDirectoryPath);
+
+  const routeFilePath = path.join(routeDirectoryPath, 'en.json');
+
+  fs.writeFileSync(routeFilePath, routeTemplate, 'utf8');
+
+  return routeFilePath;
+}
 function scaffoldManifest() {
   const manifestTemplate = `// eslint-disable-next-line no-unused-vars
 import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore-jss-manifest';

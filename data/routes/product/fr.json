@@ -1,0 +1,16 @@
+{
+  "id": "product",
+  "fields": {
+    "pageTitle": "FWD Group"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "Product",
+        "fields": {
+          "heading": "Employé associé au produit"
+        }
+      }
+    ]
+  }
+}

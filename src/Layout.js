@@ -18,8 +18,30 @@ import './assets/app.css';
 
 // This is boilerplate navigation for sample purposes. Most apps should throw this away and use their own navigation implementation.
 // Most apps may also wish to use GraphQL for their navigation construction; this sample does not simply to support disconnected mode.
-let Navigation = ({t, i18n}) => (
-    <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
+let Navigation = ({t, i18n}) => {
+if(i18n.language=="fr"){
+    return (  <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
+
+            <nav className="navbar navbar-inverse">
+                <div className="container-fluid">
+                    <div className="navbar-header">
+                        <a className="navbar-brand" href="/home">
+                            <img src={"https://www.fwd.com/en/images/home/fwd.png"} alt="Sapient"/>
+                        </a>
+                    </div>
+                    <NavLink to="/home" className="p-2 text-dark">
+                        {t('Accueil')}
+                   </NavLink>
+                    <NavLink to="/product" className="p-2 text-dark">
+                        {t('Produit')}
+                    </NavLink>
+                </div>
+            </nav>
+        </div>
+    )
+}else
+    return(
+   <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
 
         <nav className="navbar navbar-inverse">
             <div className="container-fluid">
@@ -30,6 +52,7 @@ let Navigation = ({t, i18n}) => (
                 </div>
                 <NavLink to="/home" className="p-2 text-dark">
                     {t('Home')}
+
                 </NavLink>
                 <NavLink to="/product" className="p-2 text-dark">
                     {t('Product')}
@@ -37,7 +60,7 @@ let Navigation = ({t, i18n}) => (
             </div>
         </nav>
     </div>
-);
+)};
 
 // inject dictionary props (`t`) into navigation so we can translate it
 // NOTE: using this is needed instead of using i18next directly to keep

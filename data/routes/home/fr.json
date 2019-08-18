@@ -1,0 +1,21 @@
+{
+  "id": "Nous",
+  "fields": {
+    "pageTitle": "FWD"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "Home",
+        "fields": {
+          "heading": "Qui est FWD?",
+          "imageUrl": {
+            "src": "/data/media/img/image.jpg",
+            "alt": "FWD Group Image"
+          },
+          "content": "<p>Nous sommes un nouveau type de société d’assurance, doté d’un état d’esprit axé sur la technologie et dont la vision est de changer les sentiments des gens vis-à-vis de l’assurance. Nous pensons que l’assurance devrait être une source d’autonomisation et non une contrainte. Cela devrait susciter l’optimisme et la confiance, et non la peur et l’inquiétude. Et c’est parce que nous pensons que l’assurance devrait aider les gens à célébrer la vie et à vivre leur vie sans hésiter</p><h3>Nos marchés</h3><p>Notre vision est de devenir un assureur pan-asiatique de premier plan qui change la perception des gens vis-à-vis de l'assurance. Depuis le lancement de FWD sur nos marchés établis de Hong Kong, Macao et la Thaïlande, nous avons ajouté l’Indonésie, les Philippines, Singapour, le Vietnam, le Japon et la Malaisie à notre portefeuille de sociétés. Nous avons maintenant plus de 17 900 agents liés et 4 600 employés, servant plus de 5 millions de clients en Asie.</p>"
+        }
+      }
+    ]
+  }
+}

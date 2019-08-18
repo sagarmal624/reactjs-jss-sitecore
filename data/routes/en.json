@@ -1,0 +1,17 @@
+{
+  "id": "home-page",
+  "fields": {
+    "pageTitle": "FWD Group"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "ContentBlock",
+        "fields": {
+          "heading": "About Us",
+          "content": "Established in Asia in 2013, FWD is the insurance business of investment group, Pacific Century Group. Over the past few years, FWD has grown rapidly across the region and we have established ourselves as an innovative, dynamic player across our key markets.<h3>Vision</h3>FWD is focused on creating fresh customer experiences, with easy-to-understand products, supported by digital technology. Through this customer-led approach, FWD's vision is to become a leading pan-Asian insurer that changes the way people feel about insurance.\nLearn more about FWD<h3>Our \nshareholders</h3>FWD is the insurance business of Pacific Century Group. Pacific Century Group (PCG) is an Asia-based private investment group established in 1993. PCG has a strong track record of holding and developing assets over the long term, and has a network of well-established connections in Asia.\n\nPCG has interests in three core business pillars: financial services, technology, media & telecommunications, and real estate. Our sister companies include global integrated communications group PCCW; Hong Kong's premier telecommunications service provider HKT; global asset manager PineBridge Investments; and property and infrastructure development company Pacific Century Premium Developments (PCPD).\n\nOur minority shareholder, Swiss Re Group, is one of the world's leading reinsurers"
+        }
+      }
+    ]
+  }
+}

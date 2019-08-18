@@ -1,0 +1,21 @@
+{
+  "id": "home",
+  "fields": {
+    "pageTitle": "FWD"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "Home",
+        "fields": {
+          "heading": "Who is FWD?",
+          "imageUrl": {
+            "src": "/data/media/img/image.jpg",
+            "alt": "FWD Group Image"
+          },
+          "content": "<p>We are a new, different kind of insurance company, with a technology-driven mindset and a vision to change the way people feel about insurance. We believe that insurance should be a source of empowerment, not a constraint. It should instil optimism and confidence, not fear and worry. And that’s because we think insurance should help people to celebrate living and live their lives without hesitation.</p>\n <h3>Our markets</h3>\n Our vision is to become a leading pan-Asian insurer that changes the way people feel about insurance.\n\n Since FWD was launched in our established markets of Hong Kong, Macau and Thailand, we have added Indonesia, the Philippines, Singapore, Vietnam, Japan and Malaysia to our portfolio of companies.\n\n We now have more than 17,900 tied agents and 4,600 staff, serving over 5 million customers in Asia.\n"
+        }
+      }
+    ]
+  }
+}

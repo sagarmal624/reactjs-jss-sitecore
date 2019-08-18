@@ -38,7 +38,9 @@ if (fs.existsSync(componentManifestDefinitionsPath)) {
 }
 
 const componentOutputPath = scaffoldComponent();
+
 const routeOutputPath = scaffoldRoute();
+
 
 console.log();
 console.log(chalk.green(`Component ${componentName} has been scaffolded.`));
@@ -65,7 +67,7 @@ if (manifestOutputPath) {
       'jss deploy:watch'
     )} or ${chalk.green('jss deploy files')})`
   );
-  console.log(`* Scaffold already added route(${routeOutputPath}) for this the component.try with /${componentName}`);
+  console.log(`* Scaffold already added route for this the component.try with /${componentName}`);
 }
 
 /*
@@ -90,11 +92,11 @@ export default ${exportVarName};
 
   const outputDirectoryPath = path.join(componentRootPath, componentName);
 
-  if (fs.existsSync(outputDirectoryPath)) {
-    throw `Component path ${outputDirectoryPath} already existed. Not creating component.`;
-  }
+  // if (fs.existsSync(outputDirectoryPath)) {
+  //   throw `Component path ${outputDirectoryPath} already existed. Not creating component.`;
+  // }
 
-  fs.mkdirSync(outputDirectoryPath);
+ // fs.mkdirSync(outputDirectoryPath);
 
   const outputFilePath = path.join(outputDirectoryPath, 'index.js');
 
@@ -129,7 +131,6 @@ var routeName=exportVarName.toLowerCase();
   if (fs.existsSync(routeDirectoryPath)) {
     throw `Component Route path ${routeDirectoryPath} already existed. Not creating route for the component.`;
   }
-
   fs.mkdirSync(routeDirectoryPath);
 
   const routeFilePath = path.join(routeDirectoryPath, 'en.json');
@@ -163,8 +164,12 @@ export default function(manifest) {
 }
 `;
 
+  const manifestFilePath = path.join(componentManifestDefinitionsPath,componentName);
+
+  fs.mkdirSync(manifestFilePath);
+
   const outputFilePath = path.join(
-    componentManifestDefinitionsPath,
+      manifestFilePath,
     `${componentName}.sitecore.js`
   );
 

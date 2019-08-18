@@ -1,0 +1,17 @@
+{
+  "id": "insurance",
+  "fields": {
+    "pageTitle": "Welcome to Insurance"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "Insurance",
+        "fields": {
+          "heading": "Put Heading of component Here...",
+          "content":"<p>content goes here...</p>"
+        }
+      }
+    ]
+  }
+}

@@ -1,7 +1,10 @@
 a[target='_blank']:after {
   content: '\1F5D7'
 }
-
+.nav-main{
+  background-color: cadetblue !important;
+  padding: 0px !important;
+}
 /*
   Hides Sitecore Experience Editor markup,
   if you run the app in connected mode while the Sitecore cookies

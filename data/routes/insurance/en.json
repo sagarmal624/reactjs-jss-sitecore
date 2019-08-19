@@ -1,15 +1,59 @@
 {
   "id": "insurance",
   "fields": {
-    "pageTitle": "Welcome to Insurance"
+    "pageTitle": "Welcome to Insurance",
+    "heading": "Welcome to Insurance"
   },
   "placeholders": {
     "jss-main": [
       {
         "componentName": "Insurance",
         "fields": {
-          "heading": "Put Heading of component Here...",
-          "content":"<p>content goes here...</p>"
+          "heading": "Put Heading of component Here..."
+        },
+        "placeholders": {
+          "jss-tabs": [
+            {
+              "componentName": "LiCInsurance",
+              "fields": {
+                "title": "LIC",
+                "content": "1. Benefits:\n\nDeath benefit : In case of death during the policy term, provided all due premiums have been paid, Death benefit, defined as sum of \"Sum Assured on Death \", vested Simple Reversionary Bonuses and Final Additional bonus, if any, shall be payable. Where \"Sum Assured on Death\" is defined as the higher of 10 times of annualised premium or Absolute amount assured to be paid on death i.e. 100% of the Basic Sum Assured during first 5 policy years, 125% of the Basic Sum Assured during 6th to 10th policy years, 150% of the Basic Sum Assured during 11th to 15 th policy years and thereafter 200% of the Basic Sum Assured.\n\nThis death benefit shall not be less than 105% of all the premiums paid as on date of death.\n\nPremiums referred above shall not include any taxes, extra amount chargeable under the policy due to underwriting decision and rider premium, if any.\n\nMaturity Benefit: \"Sum Assured on Maturity\" equal to Basic Sum Assured, along with vested Simple Reversionary bonuses and Final Additional bonus, if any, shall be payable in lump sum on survival to the end of the policy term provided all due premiums have been paid.\n\nParticipation in Profits : The policy shall participate in profits of the Corporation and shall be entitled to receive Simple Reversionary Bonuses declared as per the experience of the Corporation, provided the policy is in force. The Bonuses shall be declared on the Basic Sum Assured.\n\nFinal Additional Bonus may also be declared under the policy in the year when the policy results into a claim either by death or maturity.\n\n<br>2. Optional Rider:\nThe policyholder has an option of availing LIC's Accidental Death and Disability Benefit Rider (UIN: 512B209V01). Rider sum assured cannot exceed the Basic Sum Assured.\n\nFor more details on the above riders, refer to the rider brochure or contact LIC's nearest Branch Office.\n "
+              }
+            },
+            {
+              "componentName": "HdfcInsurance",
+              "fields": {
+                "title": "HDFC",
+                "content": "HDFC Life Insurance Plan",
+                "imageUrl": {
+                  "src": "/data/media/img/hdfc.jpg",
+                  "alt": "FWD Group Image"
+                }
+              }
+            },
+            {
+              "componentName": "BjajInsurance",
+              "fields": {
+                "title": "BJAJ",
+                "content": "Bjaj Life Insurance Plan",
+                "imageUrl": {
+                  "src": "/data/media/img/bjaj.jpg",
+                  "alt": "FWD Group Image"
+                }
+              }
+            },
+            {
+              "componentName": "MaxInsurance",
+              "fields": {
+                "title": "Max Life",
+                "content": "Max Life Insurance Plan",
+                "imageUrl": {
+                  "src": "/data/media/img/max.jpg",
+                  "alt": "FWD Group Image"
+                }
+              }
+            }
+          ]
         }
       }
     ]

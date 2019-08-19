@@ -118,7 +118,6 @@ var routeName=exportVarName.toLowerCase();
         "componentName": "${exportVarName}",
         "fields": {
           "heading": "Put Heading of component Here...",
-          "content":"<p>content goes here...</p>"
         }
       }
     ]
@@ -154,6 +153,7 @@ export default function(manifest) {
     icon: SitecoreIcon.DocumentTag,
     fields: [
       { name: 'heading', type: CommonFieldTypes.SingleLineText },
+      
     ],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,

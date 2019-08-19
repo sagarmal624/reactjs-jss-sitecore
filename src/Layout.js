@@ -20,44 +20,57 @@ import './assets/app.css';
 // Most apps may also wish to use GraphQL for their navigation construction; this sample does not simply to support disconnected mode.
 let Navigation = ({t, i18n}) => {
 if(i18n.language=="fr"){
-    return (  <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
+    return (  <div className="nav-main d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
 
             <nav className="navbar navbar-inverse">
                 <div className="container-fluid">
                     <div className="navbar-header">
-                        <a className="navbar-brand" href="/home">
+                        <a className="navbar-brand" href="/fr/home">
                             <img src={"https://www.fwd.com/en/images/home/fwd.png"} alt="Sapient"/>
                         </a>
                     </div>
-                    <NavLink to="/home" className="p-2 text-dark">
+                    <NavLink to="/fr/home" className="p-2 text-dark">
                         {t('Accueil')}
                    </NavLink>
-                    <NavLink to="/product" className="p-2 text-dark">
+                    <NavLink to="/fr/product" className="p-2 text-dark">
                         {t('Produit')}
                     </NavLink>
-                </div>
+                    <NavLink to="/fr/insurance" className="p-2 text-dark">
+                        {t('Assurance')}
+                    </NavLink>
+                    <NavLink to="/en" className="p-2 text-dark">
+                        {t('Langue Anglaise')}
+                    </NavLink>
+                 </div>
             </nav>
         </div>
     )
 }else
     return(
-   <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
+   <div className="nav-main d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
 
         <nav className="navbar navbar-inverse">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a className="navbar-brand" href="/home">
+                    <a className="navbar-brand" href="/en/home">
                         <img src={"https://www.fwd.com/en/images/home/fwd.png"} alt="Sapient"/>
                     </a>
                 </div>
-                <NavLink to="/home" className="p-2 text-dark">
+                <NavLink to="/en/home" className="p-2 text-dark">
                     {t('Home')}
 
                 </NavLink>
-                <NavLink to="/product" className="p-2 text-dark">
+                <NavLink to="/en/product" className="p-2 text-dark">
                     {t('Product')}
                 </NavLink>
-            </div>
+                <NavLink to="/en/insurance" className="p-2 text-dark">
+                    {t('Insurance')}
+                </NavLink>
+                <NavLink to="/fr" className="p-2 text-dark">
+                    {t('French Language')}
+                </NavLink>
+
+             </div>
         </nav>
     </div>
 )};

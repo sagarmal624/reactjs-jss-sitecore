@@ -1,0 +1,61 @@
+{
+  "id": "insurance",
+  "fields": {
+    "pageTitle": "Welcome to Insurance",
+    "heading": "Welcome to Insurance"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "Insurance",
+        "fields": {
+          "heading": "Put Heading of component Here..."
+        },
+        "placeholders": {
+          "jss-tabs": [
+            {
+              "componentName": "LiCInsurance",
+              "fields": {
+                "title": "LIC",
+                "content": "1. Prestations: Capital-décès: en cas de décès pendant la durée du contrat, à condition que toutes les primes échues aient été payées, capital-décès, défini comme la somme du «capital assuré au décès», des primes de réversion simple acquises et de la prime supplémentaire finale, le cas échéant, sera payable. Lorsque le \"capital assuré au décès\" est défini comme le montant maximal de la prime annualisée ou du montant absolu assuré payable au décès correspondant à 10 fois, soit 100% du capital assuré de base au cours des 5 premières années de la police, 125% du capital assuré de base au 6 jusqu’à la dixième année d’assurance, 150% de la somme de base assurée au cours de la onzième à la quinzième année d’assurance, puis 200% de la somme de base assurée. Cette prestation de décès ne doit pas être inférieure à 105% de toutes les primes payées à la date du décès. Les primes mentionnées ci-dessus n'incluent pas les taxes, le montant supplémentaire imputable aux termes de la police en raison d'une décision de souscription et la prime de l'avenant, le cas échéant. Prestation à l'échéance: \"Somme garantie à l'échéance\" égale à la somme de base assurée, ainsi que les primes de réversion simple acquises et la prime supplémentaire finale, le cas échéant, sont payables sous forme de somme forfaitaire à l'échéance du contrat jusqu'à la fin de la durée de la police, à condition que toutes les primes exigibles aient été versées. payé. Participation aux bénéfices: La police participera aux bénéfices de la société et aura le droit de recevoir des primes de réversion simples déclarées selon l'expérience de la société, à condition que la police soit en vigueur. Les bonus seront déclarés sur la somme de base assurée. La prime supplémentaire finale peut également être déclarée en vertu de la police dans l'année où la police donne lieu à une réclamation, que ce soit par décès ou par échéance.\n<br>2. Avenant facultatif: le titulaire de police a l'option de se prévaloir de l'avenant d'indemnités de décès et d'invalidité par accident de LIC (UIN: 512B209V01). La somme assurée par le coureur ne peut dépasser la somme de base assurée. Pour plus de détails sur les coureurs ci-dessus, reportez-vous à la brochure du coureur ou contactez la succursale la plus proche de LIC."
+              }
+            },
+            {
+              "componentName": "HdfcInsurance",
+              "fields": {
+                "title": "HDFC",
+                "content": "Plan d'assurance vie HDFC",
+                "imageUrl": {
+                  "src": "/data/media/img/hdfc.jpg",
+                  "alt": "FWD Group Image"
+                }
+              }
+            },
+            {
+              "componentName": "BjajInsurance",
+              "fields": {
+                "title": "BJAJ",
+                "content": "Plan d'assurance vie BJAJ",
+                "imageUrl": {
+                  "src": "/data/media/img/bjaj.jpg",
+                  "alt": "FWD Group Image"
+                }
+              }
+            },
+            {
+              "componentName": "MaxInsurance",
+              "fields": {
+                "title": "Max Life",
+                "content": "Plan d'assurance vie MAX",
+                "imageUrl": {
+                  "src": "/data/media/img/max.jpg",
+                  "alt": "FWD Group Image"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -6,12 +6,14 @@ class ProductList extends React.Component {
         this.state = {
             error: null,
             isLoaded: false,
-            items: []
+            items: [],
+            users:null
         };
     }
 
     componentDidMount() {
-        fetch("http://dummy.restapiexample.com/api/v1/employees")
+
+        fetch("http://dummy.restapiexample.com/api/v1/employees1")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -21,14 +23,12 @@ class ProductList extends React.Component {
                     });
                 },
                 (error) => {
-                    this.setState({
-                        isLoaded: true,
-                        error
-                    });
+                  throw new Error("Something Went Wrong");
                 }
             )
     }
     renderTableData() {
+
         return this.state.items.map((item, index) => {
             const { id, employee_name, employee_salary, employee_age ,profile_image} = item ;
             return (

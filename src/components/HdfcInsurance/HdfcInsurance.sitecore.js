@@ -2,16 +2,18 @@
 import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore-jss-manifest';
 
 /**
- * Adds the User2 component to the disconnected manifest.
+ * Adds the HdfcInsurance component to the disconnected manifest.
  * This function is invoked by convention (*.sitecore.js) when 'jss manifest' is run.
  * @param {Manifest} manifest Manifest instance to add components to
  */
 export default function(manifest) {
   manifest.addComponent({
-    name: 'User2',
-    icon: SitecoreIcon.DocumentTag,
+    name: 'HdfcInsurance',
+    icon: SitecoreIcon.TabPane,
     fields: [
-      { name: 'heading', type: CommonFieldTypes.SingleLineText },
+      { name: 'title', type: CommonFieldTypes.SingleLineText },
+      { name: 'content', type: CommonFieldTypes.RichText },
+      { name: 'imageUrl', type: CommonFieldTypes.Image },
     ],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,

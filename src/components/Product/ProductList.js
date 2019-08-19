@@ -13,7 +13,7 @@ class ProductList extends React.Component {
 
     componentDidMount() {
 
-        fetch("http://dummy.restapiexample.com/api/v1/employees1")
+        fetch("http://dummy.restapiexample.com/api/v1/employees")
             .then(res => res.json())
             .then(
                 (result) => {

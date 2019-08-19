@@ -38,6 +38,9 @@ if(i18n.language=="fr"){
                     <NavLink to="/fr/insurance" className="p-2 text-dark">
                         {t('Assurance')}
                     </NavLink>
+                    <NavLink to="/fr/customerservice" className="p-2 text-dark">
+                        {t('Service Clients')}
+                    </NavLink>
                     <NavLink to="/en" className="p-2 text-dark">
                         {t('Langue Anglaise')}
                     </NavLink>
@@ -65,6 +68,9 @@ if(i18n.language=="fr"){
                 </NavLink>
                 <NavLink to="/en/insurance" className="p-2 text-dark">
                     {t('Insurance')}
+                </NavLink>
+                <NavLink to="/en/customerservice" className="p-2 text-dark">
+                    {t('Customer Service')}
                 </NavLink>
                 <NavLink to="/fr" className="p-2 text-dark">
                     {t('French Language')}

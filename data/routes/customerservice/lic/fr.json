@@ -1,0 +1,21 @@
+{
+  "id": "lic",
+  "fields": {
+    "pageTitle": "FWD Group"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "LicCustomerService",
+        "fields": {
+          "heading": "Coordonnées du service clientèle LIC.",
+          "content": "Les services de centre d'appels LIC sont désormais disponibles 24 heures sur 24, 7 jours sur 7, au 022 6827 6827.",
+          "imageUrl": {
+            "src": "/data/media/img/lic_cs.jpg",
+            "alt": "FWD Group Image"
+          }
+        }
+      }
+    ]
+  }
+}

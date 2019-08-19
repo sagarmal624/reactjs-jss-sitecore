@@ -1,0 +1,21 @@
+{
+  "id": "lic",
+  "fields": {
+    "pageTitle": "FWD Group"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "LicCustomerService",
+        "fields": {
+          "heading": "LIC Customer Care Service Contact Details",
+          "content": "LIC Call Centre Services are now available 24*7 at phone number 022 6827 6827.",
+          "imageUrl": {
+            "src": "/data/media/img/lic_cs.jpg",
+            "alt": "FWD Group Image"
+          }
+        }
+      }
+    ]
+  }
+}

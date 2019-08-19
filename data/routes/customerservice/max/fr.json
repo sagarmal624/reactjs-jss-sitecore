@@ -1,0 +1,20 @@
+{
+  "id": "max",
+  "fields": {
+    "pageTitle": "FWD Group"
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "MaxCustomerService",
+        "fields": {
+          "heading": "Coordonnées du service clientèle MAX FWD",
+          "imageUrl": {
+            "src": "/data/media/img/max_cs.jpg",
+            "alt": "FWD Group Image"
+          }
+        }
+      }
+    ]
+  }
+}

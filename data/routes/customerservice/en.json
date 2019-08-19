@@ -1,0 +1,22 @@
+{
+  "id": "customerservice",
+  "fields": {
+    "pageTitle": "Customer Service Numbers."
+  },
+  "placeholders": {
+    "jss-main": [
+      {
+        "componentName": "CustomerService",
+        "fields": {
+          "heading": "Customer Service Numbers.",
+          "Licdescription": "Lic Customer Care Number",
+          "Maxdescription": "MAX Customer Care Number",
+          "imageUrl": {
+            "src": "/data/media/img/customer_care.jpg",
+            "alt": "FWD Group Image"
+          }
+        }
+      }
+    ]
+  }
+}
